@@ -1,16 +1,31 @@
-## Hi there 👋
+# 🌊 Cayla
 
-<!--
-**Dotsian/Dotsian** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Hi, my name is Cayla! I'm a passionate **7-year self-taught programmer** who often contributes to open-source projects.
 
-Here are some ideas to get you started:
+```py
+from dataclasses import dataclass
+from typing import Literal
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+type KnownLanguage = Literal["Python"] | Literal["Luau"]
+
+@dataclass
+class Cayla():
+    """
+    Information about me!
+
+    Parameters
+    ----------
+    best_language: KnownLanguage
+        The language I work the best with.
+    languages: list[KnownLanguage]
+        A list of languages I work the best with.
+    website: str
+        My portfolio!
+    """
+
+    best_language: KnownLanguage = "Python"
+    languages: list[KnownLanguage] = ["Python", "Luau"]
+    website: str = "https://cayla-portfolio.carrd.co/"
+
+cayla = Cayla()
+```
